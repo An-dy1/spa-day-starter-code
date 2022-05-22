@@ -17,15 +17,15 @@
 
 <div id = "servicesMenu">
 
-    <th:block>
-        <div th:if="${manipedi == 'manicure'}">
+    <th:block th:if="${manipedi == 'manicure'}">
+        <div>
             <h3>Manicure</h3>
             <p th:replace="fragments :: manicureDescription"></p>
         </div>
     </th:block>
 
-    <th:block>
-        <div th:if="${manipedi == 'pedicure'}">
+    <th:block th:if="${manipedi == 'pedicure'}">
+        <div>
             <h3>Pedicure</h3>
             <p th:replace="fragments :: pedicureDescription"></p>
         </div>
