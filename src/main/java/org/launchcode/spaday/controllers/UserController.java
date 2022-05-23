@@ -23,6 +23,7 @@ public class UserController {
 
 		model.addAttribute("username", user.getUsername());
 		model.addAttribute("email", user.getEmail());
+		model.addAttribute("id", user.getId());
 
 		// why these?
 //		model.addAttribute("user", user);

@@ -6,8 +6,9 @@
 </head>
 
 <body>
-<p th:text="'Welcome ' + ${user.username} + '!'"></p>
-<p th:text="'The email we have on file for you is ' + ${user.email}"></p>
+<p th:text="'Welcome ' + ${user.username} + '!'"></p><br>
+<p th:text="'The email we have on file for you is ' + ${user.email}"></p><br>
+<p th:text="'Your unique id is: ' + ${user.id}"></p>
 <a th:href="@{/}">
 	Select your spa services here
 </a>

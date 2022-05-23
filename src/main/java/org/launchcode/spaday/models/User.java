@@ -5,8 +5,21 @@ public class User {
 	private String username;
 	private String email;
 	private String password;
+	private int id;
+	public static int nextId = 1;
 
+	public User() {
+		this.id = nextId;
+		nextId++;
+	}
 
+	public User(String username, String email, String password) {
+		this();
+		this.username = username;
+		this.email = email;
+		this.password = password;
+
+	}
 
 	public String getUsername() {
 		return username;
@@ -30,5 +43,9 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public int getId() {
+		return id;
 	}
 }
