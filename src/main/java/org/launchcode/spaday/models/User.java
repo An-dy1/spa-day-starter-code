@@ -55,4 +55,12 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String getVerify() {
+		return verify;
+	}
+
+	public void setVerify(String verify) {
+		this.verify = verify;
+	}
 }
