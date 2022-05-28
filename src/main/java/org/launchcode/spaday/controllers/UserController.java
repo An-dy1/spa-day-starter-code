@@ -25,11 +25,6 @@ public class UserController {
 		model.addAttribute("email", user.getEmail());
 		model.addAttribute("id", user.getId());
 
-		// why these?
-//		model.addAttribute("user", user);
-//		model.addAttribute("verify", verify);
-
-
 		if (user.getPassword().equals(verify)) {
 			return "user/index";
 		} else {
