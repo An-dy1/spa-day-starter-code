@@ -27,8 +27,7 @@ public class UserController {
 
 		if (user.getPassword().equals(verify)) {
 			UserData.addUser(user);
-			Collection<User> allUsers = UserData.getAllUsers();
-			model.addAttribute("allUsers", allUsers);
+			model.addAttribute("allUsers", UserData.getAllUsers());
 			return "user/index";
 		} else {
 			model.addAttribute("error", "Passwords do not match");
