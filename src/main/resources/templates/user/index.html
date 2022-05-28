@@ -13,5 +13,19 @@
 	Select your spa services here
 </a>
 
+<h2>All users</h2>
+<table>
+	<thead>
+	<tr>
+		<th>User</th>
+		<th>Email</th>
+	</tr>
+	</thead>
+	<tr th:each="userOfAll : ${allUsers}">
+		<td th:text="${userOfAll.username}"></td>
+		<td th:text="${userOfAll.email}"></td>
+	</tr>
+</table>
+
 </body>
 </html>

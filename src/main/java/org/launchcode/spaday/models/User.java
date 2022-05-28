@@ -9,7 +9,8 @@ public class User {
     public static int nextId = 1;
 
     public User() {
-
+        this.id = nextId;
+        nextId++;
     }
 
     public User(String username, String email, String password) {
@@ -17,8 +18,7 @@ public class User {
         this.username = username;
         this.email = email;
         this.password = password;
-        this.id = nextId;
-        nextId++;
+
 
     }
 
